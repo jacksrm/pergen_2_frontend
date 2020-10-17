@@ -1,0 +1,95 @@
+.content.center {
+  display: flex;
+  justify-content: unset;
+  padding: 0;
+  padding-left: 2vw;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1vh 1vh 0 1vh;
+}
+
+.info {
+  width: 50vw;
+  margin-right: 5vw;
+}
+
+.info a{
+  color: #ff0634 ;
+}
+
+.info strong {
+  color: #ff0634 ;
+  font-weight: 700;
+}
+
+.info input,select {
+  height: 2.5rem;
+  background-color: transparent;
+  border: 1px solid #208eff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 5px;
+  /* color: #ddd; */
+  color: #ff0634;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.info select option {
+  background-color: transparent;
+  color: #000;
+}
+
+.info form {
+  display: flex;
+  margin-top: 5vh;
+  align-items: center;
+}
+
+.info .button {
+  height: 5vh;
+  width: 5vw;
+  line-height: 4vh;
+}
+
+.permutations {
+  height: 80%;
+  width:  auto;
+  border-left: 1px solid #208eff;
+  border-right: 1px solid #208eff;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.permutations #perm-count {
+  margin: 0;
+}
+
+.scroll {
+  height: 90%;
+  overflow-y: auto;
+
+}
+
+/* 
+.scroll::-webkit-scrollbar-track{
+} */
+
+.scroll ul {
+  width: auto;
+}
+
+.scroll ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: #208eff;
+}
