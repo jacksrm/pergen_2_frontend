@@ -136,7 +136,7 @@ export default function Permutation() {
               <select
                 name="select"
                 onChange={(e) =>
-                  setIsNumber(e.target.value === 'true' ? true : false)
+                  setIsNumber(e.target.value === 'true')
                 }
               >
                 <option value="true">Numérico</option>
