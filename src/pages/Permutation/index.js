@@ -97,10 +97,9 @@ export default function Permutation() {
 
   return (
     <>
-      <div className="content center">
-        <h1>Gerador de Permutações</h1>
-
+      <div className="content content-permutation">
         <div className="app">
+          <h1>Gerador de Permutações</h1>
           <div className="info">
             <p>
               Essa é uma aplicação com a finalidade de gerar permutações em
@@ -117,8 +116,8 @@ export default function Permutation() {
 
             <p>
               Você pode escolher permutações com sistema numérico ou
-              alfanumérico. Para ambos os sistemas, as permutações são de{' '}
-              <strong>1 → N</strong>, porém, por questões de desempenho,
+              alfanumérico. Para ambos os sistemas, as permutações são de
+              <strong> 1 → N</strong>, porém, por questões de desempenho,
               limitaremos a <strong>1 → 10</strong>. Para o sistema numérico,
               escolha o valor de <strong>N</strong>, para o sistema
               alfanumérico, insira os caracteres separados por vírgula ( , ).
@@ -126,18 +125,16 @@ export default function Permutation() {
 
             <p style={{ marginTop: '2vh' }}>
               <strong>Aviso:</strong>{' '}
-              <i>
-                O resultado será verdadeiro desde que os caracteres{' '}
-                <strong>não estejam repetidos</strong>.
-              </i>
+              <em>
+                O resultado será verdadeiro desde que os caracteres
+                <strong> não estejam repetidos</strong>.
+              </em>
             </p>
 
             <form onSubmit={generateArray}>
               <select
                 name="select"
-                onChange={(e) =>
-                  setIsNumber(e.target.value === 'true')
-                }
+                onChange={(e) => setIsNumber(e.target.value === 'true')}
               >
                 <option value="true">Numérico</option>
 
@@ -153,21 +150,21 @@ export default function Permutation() {
               </button>
             </form>
           </div>
+        </div>
 
-          <div className="permutations">
-            <h3 id="perm-count">
-              Número de permutações: {totalPermutations.length}
-            </h3>
+        <div className="permutations">
+          <h3 id="perm-count">
+            Número de permutações: {totalPermutations.length}
+          </h3>
 
-            <div className="scroll">
-              <ul>
-                {permutations.map((val, ind) => (
-                  <li key={ind}>{val}</li>
-                ))}
+          <div className="scroll">
+            <ul>
+              {permutations.map((val, ind) => (
+                <li key={ind}>{val}</li>
+              ))}
 
-                <div ref={scrollObserve}> </div>
-              </ul>
-            </div>
+              <div ref={scrollObserve}> </div>
+            </ul>
           </div>
         </div>
       </div>

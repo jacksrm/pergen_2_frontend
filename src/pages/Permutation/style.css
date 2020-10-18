@@ -1,5 +1,6 @@
-.content.center {
+.content.content-permutation{
   display: flex;
+  flex-direction: row;
   justify-content: unset;
   padding: 0;
   padding-left: 2vw;
@@ -7,9 +8,11 @@
 
 .app {
   height: 100%;
-  width: 100%;
+  width: auto;
   display: flex;
+  flex-direction: column;
   padding: 1vh 1vh 0 1vh;
+  overflow-y: auto;
 }
 
 .info {
@@ -40,10 +43,6 @@
   margin: 0 10px;
 }
 
-.info select option {
-  background-color: transparent;
-  color: #000;
-}
 
 .info form {
   display: flex;
@@ -58,8 +57,8 @@
 }
 
 .permutations {
-  height: 80%;
-  width:  auto;
+  /* height: auto;
+  width:  auto; */
   border-left: 1px solid #208eff;
   border-right: 1px solid #208eff;
   padding: 2vh;
@@ -77,10 +76,6 @@
   overflow-y: auto;
 
 }
-
-/* 
-.scroll::-webkit-scrollbar-track{
-} */
 
 .scroll ul {
   width: auto;

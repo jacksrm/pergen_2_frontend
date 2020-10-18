@@ -12,7 +12,7 @@ export default function Introduction() {
       <div className="content">
         <h1>PerGen II</h1>
 
-        <h3>Integrantes: </h3>
+        <h3>Equipe: </h3>
 
         <p>
           Jacson de Sousa Rodrigues 2012901/8 - Desenvolvedor{' '}
