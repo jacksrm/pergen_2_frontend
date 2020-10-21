@@ -161,15 +161,11 @@ export default function Permutation() {
             <ul>
               {permutations.map((val, ind) => {
                 let index = ind + 1;
-                
+
                 for (let i = 0; i < val.length - 1; i++)
                   val = val.replace(',', ', ');
 
-                return (
-                  <li key={ind}>
-                    {index}ª - {val}
-                  </li>
-                );
+                return <li key={ind}>{val}</li>;
               })}
 
               <div ref={scrollObserve}></div>
