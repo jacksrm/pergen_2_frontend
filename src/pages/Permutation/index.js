@@ -170,7 +170,7 @@ export default function Permutation() {
                 );
               })}
 
-              <div ref={scrollObserve}> </div>
+              <div ref={scrollObserve}></div>
             </ul>
           </div>
         </div>
