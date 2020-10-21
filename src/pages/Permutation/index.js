@@ -120,7 +120,7 @@ export default function Permutation() {
               <strong> 1 → N</strong>, porém, por questões de desempenho,
               limitaremos a <strong>1 → 10</strong>. Para o sistema numérico,
               escolha o valor de <strong>N</strong>, para o sistema
-              alfanumérico, insira os caracteres separados por esoaço ( ).
+              alfanumérico, insira os caracteres separados por espaço ( ).
             </p>
 
             <p style={{ marginTop: '2vh' }}>
@@ -161,9 +161,13 @@ export default function Permutation() {
             <ul>
               {permutations.map((val, ind) => {
                 for (let i = 0; i < val.length - 1; i++)
-                  val = val.replace(',', ' ');
+                  val = val.replace(',', ', ');
 
-                return <li key={ind}>{val}</li>;
+                return (
+                  <li key={ind}>
+                    {ind + 1}ª - {val}
+                  </li>
+                );
               })}
 
               <div ref={scrollObserve}> </div>
