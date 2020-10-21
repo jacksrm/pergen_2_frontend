@@ -160,13 +160,10 @@ export default function Permutation() {
           <div className="scroll">
             <ul>
               {permutations.map((val, ind) => {
-                val = val.replace(',', ' → ');
+                for (let i = 0; i < val.length - 1; i++)
+                  val = val.replace(',', ' → ');
 
-                return (
-                  <li key={ind}>
-                    {val}
-                  </li>
-                );
+                return <li key={ind}>{val}</li>;
               })}
 
               <div ref={scrollObserve}> </div>
