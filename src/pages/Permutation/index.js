@@ -63,7 +63,7 @@ export default function Permutation() {
         array.push(i + 1);
       }
     } else {
-      array = valor.split(',', 10);
+      array = valor.split(' ', 10);
       array.sort();
     }
 
@@ -120,7 +120,7 @@ export default function Permutation() {
               <strong> 1 → N</strong>, porém, por questões de desempenho,
               limitaremos a <strong>1 → 10</strong>. Para o sistema numérico,
               escolha o valor de <strong>N</strong>, para o sistema
-              alfanumérico, insira os caracteres separados por vírgula ( , ).
+              alfanumérico, insira os caracteres separados por esoaço ( ).
             </p>
 
             <p style={{ marginTop: '2vh' }}>
@@ -160,7 +160,7 @@ export default function Permutation() {
           <div className="scroll">
             <ul>
               {permutations.map((val, ind) => (
-                <li key={ind}>{val}</li>
+                <li key={ind}> {val} </li>
               ))}
 
               <div ref={scrollObserve}> </div>
