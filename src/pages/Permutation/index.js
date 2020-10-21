@@ -160,11 +160,15 @@ export default function Permutation() {
           <div className="scroll">
             <ul>
               {permutations.map((val, ind) => {
+                let index = ind + 1;
+                
                 for (let i = 0; i < val.length - 1; i++)
                   val = val.replace(',', ', ');
 
                 return (
-                  <li key={ind}>{(ind+1)+'ª'} - {val}</li>
+                  <li key={ind}>
+                    {index}ª - {val}
+                  </li>
                 );
               })}
 
