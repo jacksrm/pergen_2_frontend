@@ -161,7 +161,7 @@ export default function Permutation() {
             <ul>
               {permutations.map((val, ind) => {
                 for (let i = 0; i < val.length - 1; i++)
-                  val = val.replace(',', ' → ');
+                  val = val.replace(',', ' ');
 
                 return <li key={ind}>{val}</li>;
               })}
