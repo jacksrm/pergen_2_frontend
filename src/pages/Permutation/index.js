@@ -164,7 +164,7 @@ export default function Permutation() {
                   val = val.replace(',', ', ');
 
                 return (
-                  <li key={ind}>{ind + 1}ª - {val}</li>
+                  <li key={ind}>{(ind+1)+'ª'} - {val}</li>
                 );
               })}
 
