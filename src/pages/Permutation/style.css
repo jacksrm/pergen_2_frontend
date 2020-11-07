@@ -84,7 +84,10 @@
 .scroll ul li {
   list-style: none;
   font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: 700;
+  line-height: 2rem;
+  font-family: 'Fira-Code', 'Poppins', cursive;
+  font-weight: 500;
+  text-transform: capitalize;
   color: #208eff;
+  cursor: pointer;
 }

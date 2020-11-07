@@ -1,0 +1,12 @@
+.check {
+  display: none;
+}
+
+.check + label {
+  cursor: pointer;
+}
+
+.check:checked + label {
+  color: #ff0634;
+  text-decoration: line-through;
+}

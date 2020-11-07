@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import api from '../../services/api';
+import Check from '../../components/Check';
 
 import './style.css';
 
 export default function Permutation() {
   const [valor, setValor] = useState('');
-  const [isNumber, setIsNumber] = useState(true);
+  const [isNumber, setIsNumber] = useState(false);
   const [permutations, setPermutations] = useState([]);
   const [totalPermutations, setTotalPermutations] = useState([]);
   const [pagina, setPagina] = useState(1);
@@ -136,9 +137,8 @@ export default function Permutation() {
                 name="select"
                 onChange={(e) => setIsNumber(e.target.value === 'true')}
               >
-                <option value="true">Numérico</option>
-
                 <option value="false">Alfanumérico</option>
+                <option value="true">Numérico</option>
               </select>
               <input
                 type={isNumber ? 'number' : 'text'}
@@ -161,9 +161,13 @@ export default function Permutation() {
             <ul>
               {permutations.map((val, ind) => {
                 for (let i = 0; i < val.length - 1; i++)
-                  val = val.replace(',', ' ');
+                  val = val.replace(',', ' > ');
 
-                return <li key={ind}>{val}</li>;
+                return (
+                  <li key={ind}>
+                    <Check index={ind} label={val} />
+                  </li>
+                );
               })}
 
               <div ref={scrollObserve}></div>
