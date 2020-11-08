@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import api from '../../services/api';
-import Check from '../../components/Check';
+import LiCheckBox from '../../components/LiCheckBox';
 
 import './style.css';
 
@@ -164,9 +164,9 @@ export default function Permutation() {
                   val = val.replace(',', ' > ');
 
                 return (
-                  <li key={ind}>
-                    <Check index={ind} label={val} />
-                  </li>
+                  <LiCheckBox key={ind} >
+                    {val}
+                  </LiCheckBox>
                 );
               })}
 

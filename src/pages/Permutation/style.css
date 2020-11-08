@@ -90,4 +90,7 @@
   text-transform: capitalize;
   color: #208eff;
   cursor: pointer;
+  padding: 0 3px;
+  margin: 3px 0;
 }
+ 

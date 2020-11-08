@@ -1,0 +1,10 @@
+.scroll ul li.checked {
+  color: #ff0634;
+  text-decoration: line-through;
+}
+
+.scroll ul li.indeterminate {
+  color: #15e015;
+  border: 1px solid #15e015;
+  border-radius: 8px;
+} 
